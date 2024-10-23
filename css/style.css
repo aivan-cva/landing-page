@@ -1,3 +1,46 @@
-h1{
-  color: teal;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Roboto Mono";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root{
+  --dark-bg:#1F2937;
+  --main-text:#F9FAF8;
+  --secondary-text:#E5E7EB;
+  --btn-color:#3882F8;
+  --dark-text:#1F2937;
+  --gray-bg:#E5E7EB;
+}
+
+header, .hero, .footer{
+  background-color: var(--dark-bg);
+  color: var(--main-text);  
+}
+
+.card-section, .quote-section{
+  color: var(--dark-text);
+}
+
+.quote-section{
+  background-color: var(--gray-bg);
+}
+
+.card{
+  .square{
+    border:2px solid #3882F8;
+  }
+}
+
+.cta, button{
+  background-color: var(--btn-color);
+  color: var(--main-text);
 }
